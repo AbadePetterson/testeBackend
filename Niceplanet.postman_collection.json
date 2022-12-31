@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "9f7a4974-75d5-49fa-8962-d957c7ee9250",
+		"name": "Niceplanet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/accounts/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"accounts",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/accounts/logout",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"accounts",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Produtores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/business/produtores",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"business",
+						"produtores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Produtor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeProdutor\": \"John Connor\",\n    \"cpfProdutor\": \"1354\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/business/produtores",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"business",
+						"produtores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Propriedades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/business/propriedades",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"business",
+						"propriedades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Propriedade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomePropriedade\": \"kkk\",\n    \"cadastroRural\": \"0987\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/business/propriedades",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"business",
+						"propriedades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/accounts/usuarios",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"accounts",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeUsuario\": \"sidious\",\n    \"senhaUsuario\": \"666\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/accounts/usuarios",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"accounts",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:4001"
+		}
+	]
+}
