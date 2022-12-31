@@ -7,10 +7,10 @@
 - Digite: `npm start` para iniciar o servidor (http://localhost:4001)
 
 
-#Testar rodas
+# Testar rotas
 Por padrão a aplicação já está criando o usuário admin para se autenticar 
 - Use o postman para testar  as rotas, pode ser baixado em [https://www.postman.com/downloads/]
-- Importar a collection que contem os endpoints que permitirão criar o usuário, logar usuário e criar produtor e propriedade para usuário logado.
+- Importar a collection(está na raiz do projeto) que contem os endpoints que permitirão criar o usuário, logar usuário e criar produtor e propriedade para usuário logado.
 - Caso não consiga importar a collection as rotas são:
 - http://localhost:4001/accounts/login -> Serve para autenticar o usuário
 - http://localhost:4001/accounts/usuarios -> Serve para criar usuário
