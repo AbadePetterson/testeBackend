@@ -1,0 +1,4 @@
+node_modules
+.env
+niceplanet.jpeg
+db.sqlite
